@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee;
+}
+
+body,
+button,
+input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.App {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+.container {
+    width: 500px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .05);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.input-box {
+    background-color: #f1f1f1;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    width: 100%;
+    padding: 20px;
+}
+
+.input-box input {
+    width: calc(100% - 75px);
+    border: 1px solid rgba(0, 0, 0, .3);
+    height: 35px;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 17px;
+    outline: none;
+    box-shadow: none;
+}
+
+.input-box button {
+    width: 65px;
+    height: 35px;
+    margin-left: 10px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    font-size: 15px;
+    background-color: #3c3c3c;
+    color: #fff;
+    cursor: pointer;
+}
+
+.item-box {
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.item-box li {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-box li:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.item-box li button {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, .1);
+    font-size: 14px;
+    background-color: lightpink;
+    color: #ffff;
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+
+.item-box li button:hover {
+    background-color: lightcoral;
+}
